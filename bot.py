@@ -72,7 +72,8 @@ def sec_label(d, sec_id):
     for s in d["sections"]:
         if s["id"] == sec_id:
             return s["emoji"] + " " + s["name"]
-    return sec_iddef kb_main():
+    return sec_id
+    def kb_main():
     return InlineKeyboardMarkup([[
         InlineKeyboardButton("📋 Zayavka", callback_data="screen:zayavka"),
         InlineKeyboardButton("🛒 Zakupka", callback_data="screen:zakupka"),
